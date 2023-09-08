@@ -1,0 +1,279 @@
+.header {
+    margin: 0;
+    padding: 0;
+    top: 0;
+    display: flex;
+    gap: 1rem;
+}
+*{
+    margin: 0;
+}
+body{
+    margin: 0;
+    padding: 0;
+    
+    font-family: "eurostile", sans-serif;
+
+}
+
+.container {
+   display: flex;
+    align-items: center;
+    margin: 1rem;
+}
+
+.logo{
+    height: 3rem;
+    margin: 1rem;
+}
+
+.side {
+    position: absolute;
+    right: 0;
+    margin: 2rem;
+}
+
+.button1 {
+    border: none;
+    background-color: white;
+    color: gray;
+    font-weight: bold;
+}
+.container2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1,h3 {
+    margin: 0.5rem;
+}
+h1 {
+    margin-top: 4rem;
+    font-size: 4rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+.photo {
+    height: 25rem;
+    margin: 2rem;
+}
+
+.photo2 {
+    height: 25rem;
+    margin-top: 2rem;
+    margin-bottom: 0;
+}
+
+.container3 {
+    background-color: #6E07F3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding-bottom: 100px;
+}
+
+h2 {
+    color: white;
+    font-size: 2rem;
+    margin-top: 5rem;
+    margin-bottom: 1rem;
+}
+.firstpara {
+    color: white;
+    width: 40%;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.container4 {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin-top: -5rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    background-color: white ;
+    margin-left: 10%;
+    margin-right: 10%;
+    border: 2px solid gray;
+    border-radius: 1rem;
+    padding: 5px;
+    /* height: 30rem; */
+
+}
+.items {
+    gap: 2rem;
+}
+
+.svg {
+    height: 35px;
+    width: 35px;
+    margin-bottom: 1rem;
+    margin-top: 0.5rem;
+}
+
+h5 {
+    margin-top: 3rem;
+    color: #6E07F3;
+}
+h6 {
+    margin-bottom: 2rem;
+}
+li {
+    list-style: none;
+}
+ul {
+    padding-left: 0;
+    margin-bottom: 2rem;
+}
+.second {
+    display: inline-block;
+    width: 70%;
+}
+.green {
+    background-color: lightgreen;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 1.5rem;
+}
+
+.project{
+    margin-top: 3rem;
+}
+
+.project > h3 {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.project > p {
+    font-size: 1.2rem;
+
+}
+
+.projects {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 10px;
+    margin-bottom: 4rem;
+}
+
+.project1 > img {
+    width: 400px;
+    height: 250px;
+    border-radius: 2rem;
+}
+
+
+.button2 {
+    border: 2px solid #6E07F3;
+    padding: 0;
+    border-radius: 2rem;
+}
+
+.button2 :hover {
+    background-color: #6E07F3;
+    color: white;
+}
+.button2 > button {
+    border: none;
+    color: #6E07F3;
+    font-size: 1.5rem;
+    background-color: white;
+    border-radius: 2rem;
+    padding:0.5rem 0.8rem 0.5rem 0.8rem;
+}
+
+
+@media (max-width: 768px) {
+    .header {
+        font-size: 1rem;
+    }
+    .side {
+        margin-top: 1rem;
+    }
+
+    .button2 > button {
+        font-size: 1rem;
+    }
+    .container {
+        padding: 0;
+        width: 100%;
+        margin: 0;
+    }
+    .container2 {
+        text-align: center;
+    }
+    .container2 > h1 {
+        font-size: 1rem;
+        width: 50%;
+    }
+    .container2 > h3 {
+        font-size: 0.75rem;
+        width: 50%;
+    }
+    .photo {
+        height: 10rem;
+    }
+    .photo2 {
+        width: 90%;
+        height: 9rem;
+    }
+    .container3 {
+        height: auto;
+    }
+    .container3 > h2 {
+        font-size: 1.5rem;
+        width: 60%;
+    }
+    .container3 > p {
+        width: 80%;
+        font-size: 0.75rem;
+    }
+    .container4 {
+        grid-template-columns: 1fr;
+    }
+    .items{
+        border-bottom: 1px solid gray;
+    }
+    .items3 {
+        border-bottom: none;
+    }
+    .items > h4 {
+        font-weight: 800;
+        color: darkgray;
+    }
+    .items > p {
+        font-size: 0.8rem;
+    }
+    .items > h5 {
+        font-size: 1rem;
+    }
+    .items > h6 {
+        font-size: 0.8rem;
+    }
+    .items li {
+        font-size: 0.8rem;
+    }
+    .project1 > img{
+        width: 80%;
+        height: 90%;
+    }
+    h3 {
+        font-size: 1rem;
+    }
+    .project > p {
+        font-size: 0.8rem;
+        width: 70%;
+    }
+}
