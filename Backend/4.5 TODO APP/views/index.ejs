@@ -1,0 +1,27 @@
+<%- include("partials/header.ejs") %>
+
+    <div class="hero">
+
+
+        <div class="heading">
+            <%if(locals.tDate) { %>
+                <h1>
+                    <%= tDate %>
+                </h1>
+                <%} else{%>
+
+                    <h1>Work List</h1>
+                    <%}%>
+        </div>
+
+        <%- include("partials/todos.ejs")%>
+
+    </div>
+
+
+
+    </div>
+
+    </body>
+
+    </html>

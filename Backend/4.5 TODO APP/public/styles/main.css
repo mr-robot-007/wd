@@ -1,0 +1,134 @@
+body {
+  margin: 0;
+  background-image: url("../images/1.jpg");
+  background-repeat: no-repeat;
+  background-size:100% 100%;
+  background-attachment: fixed;
+}
+
+* {
+  font-family: "helvetica neue";
+}
+
+.headerBtn {
+  border: none;
+  background-color: none;
+}
+
+.header {
+  margin-top: 2rem;
+}
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: left;
+}
+li {
+  margin-right: 4rem;
+}
+a {
+  text-decoration: none;
+  color: rgb(0, 75, 145);
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+}
+
+.heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25rem;
+  background-color:   #7a00cc;
+  border-radius: 0.7rem;
+  color: white;
+}
+
+h1 {
+  font-weight: bold;
+  margin: 1rem;
+}
+svg {
+  margin-right: 0.6rem;
+}
+.container1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  top: 2rem;
+}
+
+.todo {
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.todos {
+  width: 25rem;
+  height: 3.5rem;
+  background-color: white;
+  text-align: center;
+  border-bottom: 1px solid gray;
+  display: flex;
+  align-items: center;
+  border-radius: 0.5rem;
+  margin-bottom: 0.2rem;
+}
+
+.checkBox {
+  margin: 2rem;
+}
+
+.checkBox:checked ~ h4 {
+  text-decoration: line-through;
+  text-decoration-color: #a683e3;
+ 
+}
+
+.add {
+  border: none;
+  background-color:  #9900ff;
+  border-radius: 50%;
+  color: white;
+  height: 3rem;
+  width: 3rem;
+  font-size: 2rem;
+  font-weight:bold;
+}
+
+.newtodo {
+  width: 21rem;
+  height: 3rem;
+  border: none;
+  text-align: center;
+  border-radius: 0.5rem;
+}
+
+form {
+  margin: 0.5rem;
+  display: flex;
+  gap: 1rem;
+}
+
+@media (max-width: 555px) {
+  .todo,
+  .heading {
+    width: 90%;
+  }
+  .todos,
+  .newtodo,
+  form {
+    width: 100%;
+  }
+  li {
+    margin-right: 2rem;
+  }
+}

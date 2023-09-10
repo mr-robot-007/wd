@@ -1,0 +1,23 @@
+<div class="todo">
+    <%if(locals.items) { %>
+        <%for(var i = 0 ; i < items.length ; i++) { %>
+            <div class="todos">
+                <input type="checkbox" class="checkBox" >
+                <h4>
+
+                    <%= items[i] %>
+                </h4>
+            </div>
+        <%} %>
+
+    <%}%>
+
+    <form action="/" method="POST">
+        <input class="newtodo" type="text" name="mytodo" id="" placeholder="New item">
+        <button class="add abc" type="submit">
+            +
+        </button>
+    </form>
+</div>
+
+
