@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/styles/main.css">
+  </head>
+  <body>
+    <h1>Bhagavad Gita</h1>
+    <form method="POST" action="/">
+        <h2 class = "ch_num">Chapter Number : </h2><input type="text" value=<%= content.ch_num %> name = "ch_num" >
+        <button type="submit">Load</button>
+        
+    </form>
+    <% if(locals.content) { %>
+    <h2 class = "name">Chapter Name : <%= content.ch_name %></h2>
+    <h2>
+        English Summary
+    </h2>
+    <p class="eng_sum"> <%= content.summary %></p>
+    <h2>
+        Hindi Summary
+    </h2>
+    <p class="hindi_sum"> <%= content.hindi %></p>
+    <%} %>
+  </body>
+</html>

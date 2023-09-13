@@ -1,0 +1,45 @@
+body {
+    background-color: lightgoldenrodyellow;
+}
+
+
+
+.ch_num {
+    display: inline;
+}
+
+p {
+    background-color: white;
+    padding: 1rem;
+    border: 1px solid lightcoral;
+    border-radius: 1rem;
+    font-weight: 800;
+    font-family: sans-serif;
+    font-size: 1rem;
+}
+
+button {
+    background-color: orange;
+    border: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 7px;
+    padding: 0.4rem;
+
+}
+h1,h2,p {
+    margin: 1rem;
+}
+
+
+@media (max-width:455px)  {
+    .ch_num {
+        display: block;
+    }
+    h1 {
+        text-align: center;
+    }
+    input{
+        margin-left: 1rem;
+    }
+}
